@@ -1,0 +1,312 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/user/ontologies/2026/2/School-Ontology/"
+     xml:base="http://www.semanticweb.org/user/ontologies/2026/2/School-Ontology/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:School-Ontology="http://www.semanticweb.org/user/ontologies/2026/2/School-Ontology#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/user/ontologies/2026/2/School-Ontology"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/2/School-Ontology#handles -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/user/ontologies/2026/2/School-Ontology#handles">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/user/ontologies/2026/2/School-Ontology#isHandledBy"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2026/2/School-Ontology#Lecturer"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/user/ontologies/2026/2/School-Ontology#Course"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/2/School-Ontology#isHandledBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/user/ontologies/2026/2/School-Ontology#isHandledBy">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2026/2/School-Ontology#Course"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/user/ontologies/2026/2/School-Ontology#Lecturer"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/2/School-Ontology#isOfferedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/user/ontologies/2026/2/School-Ontology#isOfferedBy">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/user/ontologies/2026/2/School-Ontology#offers"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2026/2/School-Ontology#Course"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/user/ontologies/2026/2/School-Ontology#Student"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/2/School-Ontology#learnsFrom -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/user/ontologies/2026/2/School-Ontology#learnsFrom">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/user/ontologies/2026/2/School-Ontology#teaches"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2026/2/School-Ontology#Student"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/user/ontologies/2026/2/School-Ontology#Lecturer"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/2/School-Ontology#offers -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/user/ontologies/2026/2/School-Ontology#offers">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2026/2/School-Ontology#Student"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/user/ontologies/2026/2/School-Ontology#Course"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/2/School-Ontology#teaches -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/user/ontologies/2026/2/School-Ontology#teaches">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2026/2/School-Ontology#Lecturer"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/user/ontologies/2026/2/School-Ontology#Student"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/2/School-Ontology#courseName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/user/ontologies/2026/2/School-Ontology#courseName">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2026/2/School-Ontology#Course"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/2/School-Ontology#lectAge -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/user/ontologies/2026/2/School-Ontology#lectAge">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2026/2/School-Ontology#Lecturer"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/2/School-Ontology#lectName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/user/ontologies/2026/2/School-Ontology#lectName">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2026/2/School-Ontology#Lecturer"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/2/School-Ontology#lectPosition -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/user/ontologies/2026/2/School-Ontology#lectPosition">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2026/2/School-Ontology#Lecturer"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/2/School-Ontology#stdAge -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/user/ontologies/2026/2/School-Ontology#stdAge">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2026/2/School-Ontology#Student"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/2/School-Ontology#stdName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/user/ontologies/2026/2/School-Ontology#stdName">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2026/2/School-Ontology#Student"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/2/School-Ontology#stdRegNumber -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/user/ontologies/2026/2/School-Ontology#stdRegNumber">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2026/2/School-Ontology#Student"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/2/School-Ontology#Course -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2026/2/School-Ontology#Course">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2026/2/School-Ontology#Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/2/School-Ontology#Lecturer -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2026/2/School-Ontology#Lecturer">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2026/2/School-Ontology#Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/2/School-Ontology#Person -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2026/2/School-Ontology#Person"/>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/2/School-Ontology#Student -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2026/2/School-Ontology#Student">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2026/2/School-Ontology#Person"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/2/School-Ontology#Ambrose -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2026/2/School-Ontology#Ambrose">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2026/2/School-Ontology#Lecturer"/>
+        <School-Ontology:handles rdf:resource="http://www.semanticweb.org/user/ontologies/2026/2/School-Ontology#CSC311"/>
+        <School-Ontology:teaches rdf:resource="http://www.semanticweb.org/user/ontologies/2026/2/School-Ontology#Geetee"/>
+        <School-Ontology:lectAge rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">35</School-Ontology:lectAge>
+        <School-Ontology:lectName>Emmanuel_Ambrose</School-Ontology:lectName>
+        <School-Ontology:lectPosition>Exams_Officer</School-Ontology:lectPosition>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/2/School-Ontology#Attah -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2026/2/School-Ontology#Attah">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2026/2/School-Ontology#Student"/>
+        <School-Ontology:offers rdf:resource="http://www.semanticweb.org/user/ontologies/2026/2/School-Ontology#CSC311"/>
+        <School-Ontology:stdAge rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">23</School-Ontology:stdAge>
+        <School-Ontology:stdName>Attah_Attah_Sunday</School-Ontology:stdName>
+        <School-Ontology:stdRegNumber>1203</School-Ontology:stdRegNumber>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/2/School-Ontology#CSC311 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2026/2/School-Ontology#CSC311">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2026/2/School-Ontology#Course"/>
+        <School-Ontology:courseName>Data_Structures_and_Algorithms</School-Ontology:courseName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/2/School-Ontology#CSC314 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2026/2/School-Ontology#CSC314">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2026/2/School-Ontology#Course"/>
+        <School-Ontology:courseName>Operating_Systems</School-Ontology:courseName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/2/School-Ontology#CSC318 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2026/2/School-Ontology#CSC318">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2026/2/School-Ontology#Course"/>
+        <School-Ontology:courseName>Logic_Programming</School-Ontology:courseName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/2/School-Ontology#Geetee -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2026/2/School-Ontology#Geetee">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2026/2/School-Ontology#Student"/>
+        <School-Ontology:offers rdf:resource="http://www.semanticweb.org/user/ontologies/2026/2/School-Ontology#CSC314"/>
+        <School-Ontology:stdAge rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">22</School-Ontology:stdAge>
+        <School-Ontology:stdName>Nnanna_Geetee</School-Ontology:stdName>
+        <School-Ontology:stdRegNumber>055</School-Ontology:stdRegNumber>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/2/School-Ontology#Henry -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2026/2/School-Ontology#Henry">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2026/2/School-Ontology#Student"/>
+        <School-Ontology:offers rdf:resource="http://www.semanticweb.org/user/ontologies/2026/2/School-Ontology#CSC318"/>
+        <School-Ontology:stdAge rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">20</School-Ontology:stdAge>
+        <School-Ontology:stdName>Henry_Great_Eze</School-Ontology:stdName>
+        <School-Ontology:stdRegNumber>035</School-Ontology:stdRegNumber>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/2/School-Ontology#Patience -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2026/2/School-Ontology#Patience">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2026/2/School-Ontology#Lecturer"/>
+        <School-Ontology:handles rdf:resource="http://www.semanticweb.org/user/ontologies/2026/2/School-Ontology#CSC314"/>
+        <School-Ontology:teaches rdf:resource="http://www.semanticweb.org/user/ontologies/2026/2/School-Ontology#Henry"/>
+        <School-Ontology:lectAge rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">55</School-Ontology:lectAge>
+        <School-Ontology:lectName>Patience_Usip</School-Ontology:lectName>
+        <School-Ontology:lectPosition>HOD</School-Ontology:lectPosition>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/2/School-Ontology#Ubong -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2026/2/School-Ontology#Ubong">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2026/2/School-Ontology#Lecturer"/>
+        <School-Ontology:handles rdf:resource="http://www.semanticweb.org/user/ontologies/2026/2/School-Ontology#CSC318"/>
+        <School-Ontology:teaches rdf:resource="http://www.semanticweb.org/user/ontologies/2026/2/School-Ontology#Attah"/>
+        <School-Ontology:lectAge rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">45</School-Ontology:lectAge>
+        <School-Ontology:lectName>Ubong_Ntia</School-Ontology:lectName>
+        <School-Ontology:lectPosition>Assistant_Lecturer</School-Ontology:lectPosition>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+

@@ -35,3 +35,4 @@ A basic school ontology built using Protege.
 <img width="939" height="456" alt="image" src="https://github.com/user-attachments/assets/3bde9d46-79cf-4229-a085-d05a6407713f" />
 
 # OwlViz:
+<img width="298" height="125" alt="image" src="https://github.com/user-attachments/assets/2bacb004-6fa6-41ef-9983-09768de8adbb" />

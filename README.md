@@ -28,7 +28,7 @@ A basic school ontology built using Protege.
 
 ## Sample DL Queries to retrieve data:
 - > Lecturer and teaches some Student and handles some Course
-- > Student and offers some Course and learnsFrom Lecturer
+- > Student and offers some Course and learnsFrom some Lecturer
 
 
 # Graphical view (OntoGraf):

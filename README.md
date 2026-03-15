@@ -26,7 +26,7 @@ A basic school ontology built using Protege.
 - stdRegNumber (Student -> xsd:string)
 
 
-## Sample DL Query to retrieve data:
+## Sample DL Queries to retrieve data:
 - > Lecturer and teaches some Student and handles some Course
 - > Student and offers some Course and learnsFrom Lecturer
 
